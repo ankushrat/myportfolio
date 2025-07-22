@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankush Rathore - Portfolio</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <img src="/images/ankush.jpg" alt="Ankush Rathore" class="profile-img">
+  <h1>Ankush Rathore</h1>
+  <p>Backend Node.js Developer</p>
+</header>
+
+<div class="container">
+<section>
+  <h2>About</h2>
+  <div class="card">
+    <p>Based in Indore, India | <strong>rathorenaankush01@gmail.com</strong> | +91 6262778985</p>
+    <p>
+      <a href="https://www.linkedin.com/in/ankush-rathore-029214211/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/ankushrat" target="_blank">GitHub</a>
+    </p>
+
+    <!-- 🔽 RESUME DOWNLOAD BUTTON -->
+    <a href="/Ankush_Rathore_Resume.pdf" class="resume-button" download>
+      📄 Download Resume
+    </a>
+  </div>
+</section>
+
+<div class="container"></div>
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <p><strong>Languages:</strong> JavaScript</p>
+      <p><strong>Frameworks:</strong> Node.js, Express.js, MongoDB</p>
+      <p><strong>Tools:</strong> Git, GitHub, Postman, APIs, Docker</p>
+    </div>
+  </div>
+</section>
+</div>
+
+
+<div class="container"></div>
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3><a href="https://play.google.com/store/apps/details?id=com.wallet.saralpe" target="_blank">SaralPe – Digital Payments Platform</a></h3>
+      <p><strong>Tech Stack:</strong> Node.js, MongoDB, Easebuzz UPI API</p>
+      <ul>
+        <li>Developed a digital wallet and recharge platform with UPI integration.</li>
+        <li>Mobile and DTH recharge via intuitive interface.</li>
+        <li>Backend optimized for security, performance, and scalability.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://github.com/ankushrat/E_COMMERCE_WEB" target="_blank">E-Commerce Website</a></h3>
+      <p><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB Atlas</p>
+      <ul>
+        <li>JWT-based authentication, secure payment using Razorpay.</li>
+        <li>Real-time order tracking and reusable APIs.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><a href="#">Microfinance Loan Management System</a></h3>
+      <p><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB</p>
+      <ul>
+        <li>Automated loan applications, approval, and EMI tracking.</li>
+        <li>Secure, real-time loan status updates.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><a href="https://yatronix.onrender.com/" target="_blank">Yatronix</a></h3>
+      <p><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB</p>
+      <ul>
+        <li>At YTRONIX, we are driven by a mission to achieve excellence in digital through innovative IT solutions that will help an organization thrive in the ever-evolving digital landscape.</li>
+        <li>Live demo deployed on Render.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="container">
+<section>
+  <h2>Experience</h2>
+  <div class="experience">
+    <div class="card">
+      <h3>Node.js Developer – Vyuvan MicroFinance</h3>
+      <p>Jul 2024 – Present</p>
+      <ul>
+        <li>Built scalable backend services</li>
+        <li>Collaborated with frontend team</li>
+        <li>Wrote modular code with testing</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Node.js Intern – Vyuvan MicroFinance</h3>
+      <p>Apr 2024 – Jun 2024</p>
+      <ul>
+        <li>Learned and implemented REST APIs & JWT</li>
+        <li>Worked on debugging and middleware</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="container">
+<section>
+  <h2>Education</h2>
+  <div class="education">
+    <div class="card">
+      <h3>MCA – Shri Dadaji Institute</h3>
+      <p>CGPA: 7.1 | Aug 2022 – Apr 2024</p>
+    </div>
+    <div class="card">
+      <h3>BSC – SN College</h3>
+      <p>CGPA: 5.5 | 2019 – 2022</p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary – Lions School, Mundi</h3>
+      <p>73% | Mathematics Stream</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="container">
+<section>
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>Solved 250+ Coding Problems on LeetCode</li>
+      <li>Completed multiple technical courses</li>
+    </ul>
+  </div>
+</section>
+</div>
+<!-- ✅ Scroll Reveal Animation Script -->
+<script>
+  const revealElements = document.querySelectorAll('.card');
+
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.9;
+
+    revealElements.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+
+      if (cardTop < triggerBottom) {
+        card.classList.add('reveal');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
